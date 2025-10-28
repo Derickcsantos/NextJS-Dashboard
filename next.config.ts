@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {},
-  output: 'standalone', // opcional, ajuda a Vercel com o build SSR
+  experimental: {}, // garantir que não ative nada experimental automaticamente
+  output: 'standalone', // melhora compatibilidade com SSR na Vercel
+  reactStrictMode: true,
 };
 
 export default nextConfig;
