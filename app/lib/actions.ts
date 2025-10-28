@@ -1,6 +1,5 @@
 'use server';
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+
 import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -136,4 +135,5 @@ export async function deleteInvoice(id: string) {
 
   await sql`DELETE FROM invoices WHERE id = ${id}`;
   revalidatePath('/dashboard/invoices');
+
 }
