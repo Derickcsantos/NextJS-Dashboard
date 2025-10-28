@@ -1,5 +1,6 @@
 'use server';
-
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';

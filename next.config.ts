@@ -8,8 +8,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // ❌ IMPORTANTE: NÃO USE output: 'export'
-  // ❌ output: 'standalone' também NÃO é necessário aqui
+  output: 'export',
 };
 
 export default nextConfig;
