@@ -2,13 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   experimental: {},
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  output: 'export',
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+
 };
 
 export default nextConfig;
