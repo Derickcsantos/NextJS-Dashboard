@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {},
   reactStrictMode: true,
-  // ❌ remove a linha abaixo:
-  // output: 'standalone'
+  experimental: {},
+  // ⚠️ Desativar standalone impede symlinks e falhas no build da Vercel
+  output: undefined,
 };
 
 export default nextConfig;
