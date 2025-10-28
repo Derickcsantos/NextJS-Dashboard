@@ -8,7 +8,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'export',
+  // ⚠️ remove "output: 'export'" — deixa o Next usar o modo SSR normal
 };
 
 export default nextConfig;
