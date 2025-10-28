@@ -4,7 +4,7 @@ const nextConfig = {
   experimental: {},
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-
+  output: 'standalone', // <- ESSENCIAL PARA VERGEL SSR
 };
 
 export default nextConfig;
