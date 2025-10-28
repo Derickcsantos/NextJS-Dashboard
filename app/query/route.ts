@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 import postgres from 'postgres';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
@@ -24,3 +27,4 @@ export async function GET() {
   	return Response.json({ error }, { status: 500 });
   }
 }
+
